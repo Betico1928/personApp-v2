@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="318.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.personappv2.controladorPersona">
+   <children>
+      <VBox layoutX="135.0" layoutY="289.0" prefHeight="200.0" prefWidth="164.0">
+         <children>
+            <TextField fx:id="textoNombre" prefHeight="25.0" prefWidth="188.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="textoApellido" prefHeight="25.0" prefWidth="188.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <RadioButton fx:id="radioMasculino" mnemonicParsing="false" text="Masculino">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="radioFemenino" mnemonicParsing="false" text="Femenino" />
+            <RadioButton fx:id="radioOtro" mnemonicParsing="false" text="Otro" />
+            <TextField fx:id="textoCedula" prefHeight="25.0" prefWidth="188.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="289.0" prefHeight="200.0" prefWidth="107.0">
+         <children>
+            <Text fx:id="tituloNombre" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre: " wrappingWidth="94.2939453125">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="tituloApellido" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido:" wrappingWidth="94.2939453125">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Text>
+            <Text fx:id="tituloGenero" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Genero:">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="tituloCedula" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula:">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="33.0" />
+               </VBox.margin>
+            </Text>
+         </children>
+      </VBox>
+      <Text fill="#0cab4e" layoutX="75.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PersonApp">
+         <font>
+            <Font name="SignPainter-HouseScript" size="50.0" />
+         </font>
+      </Text>
+      <Text fill="#0cab4e" layoutX="99.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tu mejor amigo :)">
+         <font>
+            <Font name="SignPainter-HouseScript" size="21.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="textoContactos" layoutX="14.0" layoutY="90.0" prefHeight="180.0" prefWidth="290.0" />
+      <Line endX="147.0" layoutX="159.0" layoutY="489.0" startX="-145.0" />
+      <Line endX="147.0" layoutX="159.0" layoutY="280.0" startX="-145.0" />
+      <ButtonBar layoutY="498.0" prefHeight="40.0" prefWidth="293.0">
+        <buttons>
+            <Button fx:id="botonGuardar" mnemonicParsing="false" text="Guardar" />
+          <Button fx:id="botonX" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Button" />
+            <Button fx:id="botonEliminar" mnemonicParsing="false" text="Eliminar" textFill="RED" />
+        </buttons>
+      </ButtonBar>
+      <Line endX="147.0" layoutX="156.0" layoutY="548.0" startX="-145.0" />
+      <Button fx:id="botonSalir" layoutX="18.0" layoutY="567.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="SALIR" />
+      <Button fx:id="botonIrAlTelefono" layoutX="197.0" layoutY="567.0" mnemonicParsing="false" text="Ir al Telefono" textFill="#088d22" />
+   </children>
+</AnchorPane>
