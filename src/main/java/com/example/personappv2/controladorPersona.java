@@ -7,8 +7,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
-public class controladorPersona {
-
+public class controladorPersona
+{
     @FXML // fx:id="botonEliminar"
     private Button botonEliminar; // Value injected by FXMLLoader
 
