@@ -3,6 +3,8 @@ package com.example.personappv2;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.text.Text;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 public class controladorPersona
 {
@@ -61,6 +63,35 @@ public class controladorPersona
 
     @FXML // fx:id="tituloNombre"
     private Text tituloNombre; // Value injected by FXMLLoader
+
+
+
+    // Conectarse a MySQL
+    public Connection databaseLink;
+    public Connection getConnection()
+    {
+        String nombreBaseDeDatos = "tallerFinal_db";
+        String dataBaseUser = "";
+        String databasePassword = "";
+        String url = "jdbc:mysql://localhost/" + nombreBaseDeDatos;
+
+        String datosNombre = "";
+        String datosApellido = "";
+        String datosGenero = "";
+        String datoCedula = "";
+
+
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            databaseLink = DriverManager.getConnection(url, dataBaseUser, databasePassword);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return databaseLink;
+    }
 
 
 }

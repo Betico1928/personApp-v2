@@ -1,4 +1,5 @@
-module com.example.personappv2 {
+module com.example.personappv2
+{
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,6 +11,8 @@ module com.example.personappv2 {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
+    requires mysql.connector.java;
 
     opens com.example.personappv2 to javafx.fxml;
     exports com.example.personappv2;
