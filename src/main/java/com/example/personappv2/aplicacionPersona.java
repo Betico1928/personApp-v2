@@ -13,9 +13,9 @@ public class aplicacionPersona extends Application
     public void start(Stage stage) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(aplicacionPersona.class.getResource("interfazPersona.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
+        Scene scenePersona = new Scene(fxmlLoader.load());
+        stage.setTitle("Interfaz Conexion!");
+        stage.setScene(scenePersona);
         stage.show();
     }
 
