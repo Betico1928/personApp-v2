@@ -56,4 +56,6 @@ public class controladorPersona
 
     @FXML // fx:id="tituloNombre"
     private Text tituloNombre; // Value injected by FXMLLoader
+
+
 }

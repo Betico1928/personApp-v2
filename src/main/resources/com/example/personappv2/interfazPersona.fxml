@@ -12,7 +12,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="318.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.personappv2.controladorPersona">
    <children>
       <VBox layoutX="135.0" layoutY="289.0" prefHeight="200.0" prefWidth="164.0">
@@ -59,7 +58,7 @@
                   <Insets top="10.0" />
                </VBox.margin>
             </Text>
-            <Text fx:id="tituloGenero" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Genero:">
+            <Text fx:id="tituloGenero" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Género:">
                <VBox.margin>
                   <Insets top="25.0" />
                </VBox.margin>
@@ -67,7 +66,7 @@
                   <Font name="Comic Sans MS" size="20.0" />
                </font>
             </Text>
-            <Text fx:id="tituloCedula" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Cedula:">
+            <Text fx:id="tituloCedula" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Cédula:">
                <font>
                   <Font name="Comic Sans MS" size="20.0" />
                </font>
