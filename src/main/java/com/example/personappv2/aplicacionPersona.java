@@ -12,10 +12,10 @@ public class aplicacionPersona extends Application
     @Override
     public void start(Stage stage) throws IOException
     {
-        FXMLLoader fxmlLoader = new FXMLLoader(aplicacionPersona.class.getResource("interfazPersona.fxml"));
-        Scene scenePersona = new Scene(fxmlLoader.load());
+        FXMLLoader fxmlLoader = new FXMLLoader(aplicacionPersona.class.getResource("interfazConexion.fxml"));
+        Scene sceneConexion = new Scene(fxmlLoader.load());
         stage.setTitle("Interfaz Conexion!");
-        stage.setScene(scenePersona);
+        stage.setScene(sceneConexion);
         stage.show();
     }
 

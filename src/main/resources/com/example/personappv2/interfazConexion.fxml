@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="316.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.personappv2.controladorPersona">
+   <children>
+      <HBox layoutX="14.0" layoutY="37.0" prefHeight="17.0" prefWidth="271.0">
+         <children>
+            <Label text="Usuario: " textFill="#c90000" />
+            <Label fx:id="usernameBaseDeDatos" prefHeight="17.0" prefWidth="224.0" text="[username shown here]" />
+         </children>
+      </HBox>
+      <Button fx:id="botonConectarse" layoutX="118.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Conectarse" textFill="WHITE" />
+   </children>
+</AnchorPane>
