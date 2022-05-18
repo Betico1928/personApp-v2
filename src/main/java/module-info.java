@@ -13,6 +13,7 @@ module com.example.personappv2
     requires com.almasb.fxgl.all;
     requires java.sql;
     requires mysql.connector.java;
+    requires javafx.media;
 
     opens com.example.personappv2 to javafx.fxml;
     exports com.example.personappv2;

@@ -6,6 +6,7 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
@@ -30,9 +31,12 @@
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="botonesGenero" />
+               </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="radioFemenino" mnemonicParsing="false" text="Femenino" />
-            <RadioButton fx:id="radioOtro" mnemonicParsing="false" text="Otro" />
+            <RadioButton fx:id="radioFemenino" mnemonicParsing="false" text="Femenino" toggleGroup="$botonesGenero" />
+            <RadioButton fx:id="radioOtro" mnemonicParsing="false" text="Otro" toggleGroup="$botonesGenero" />
             <TextField fx:id="textoCedula" prefHeight="25.0" prefWidth="188.0">
                <VBox.margin>
                   <Insets top="20.0" />

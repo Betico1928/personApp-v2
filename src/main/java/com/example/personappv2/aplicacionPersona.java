@@ -14,7 +14,7 @@ public class aplicacionPersona extends Application
     {
         FXMLLoader fxmlLoader = new FXMLLoader(aplicacionPersona.class.getResource("interfazConexion.fxml"));
         Scene sceneConexion = new Scene(fxmlLoader.load());
-        stage.setTitle("Interfaz Conexion!");
+        stage.setTitle("Interfaz Conexion a MySQL!");
         stage.setScene(sceneConexion);
         stage.show();
     }
