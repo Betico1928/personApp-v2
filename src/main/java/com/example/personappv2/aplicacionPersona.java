@@ -12,7 +12,7 @@ public class aplicacionPersona extends Application
     @Override
     public void start(Stage stage) throws IOException
     {
-        FXMLLoader fxmlLoader = new FXMLLoader(aplicacionPersona.class.getResource("interfazConexion.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(aplicacionPersona.class.getResource("interfazPersona.fxml"));
         Scene sceneConexion = new Scene(fxmlLoader.load());
         stage.setTitle("Interfaz Conexion a MySQL!");
         stage.setScene(sceneConexion);
